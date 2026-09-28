@@ -1,26 +1,43 @@
-# Motiva - Sprint 3
+# Motiva - App de Gestão de Ocorrências
 
-## O que o app resolve (Motiva)
-[Descreva brevemente o problema que seu app soluciona - 2 a 3 linhas]
+Aplicativo mobile desenvolvido em **React Native com Expo e TypeScript** para gerenciar o fluxo de ocorrências da Motiva, garantindo rastreabilidade, classificação de risco e persistência local dos dados.
 
-## Equipe
+---
+
+## 👥 Integrantes
 - Pedro Del Neri Coreria - RM 562168
 - Vitor Limeira dos Santos - RM 565280
 - Lucas de Freitas Barbosa - RM 564685
 - Arthur da Silva Alencar - RM 563684
 - Felipe Paula Burba Molonhoni - RM 564395
+---
 
-## Como rodar o projeto
-1. Clone este repositório: `link do github`
-2. Instale as dependências: `npm install`
-3. Inicie o projeto: `npx expo start`
+## 🚀 Sobre o Projeto (Challenge Motiva)
 
-## Como os dados são persistidos
-Os dados são persistidos utilizando a biblioteca `@react-native-async-storage/async-storage`. 
-A lógica de armazenamento está isolada na pasta `src/services/storage.ts`, garantindo que as telas não acessem o banco de dados diretamente. O fluxo salva uma string JSON localmente que sobrevive ao fechamento do aplicativo.
+### O Problema e a Solução
+A **Motiva** precisa otimizar o registro e o acompanhamento de ocorrências em campo. O aplicativo soluciona esse problema ao permitir que os operadores registrem incidentes rapidamente, informando local, descrição e o nível de risco associado, mantendo tudo organizado em uma lista acessível e detalhada.
 
-## Fluxo do App
-1. **Listar:** A tela inicial carrega os dados persistidos.
-2. **Criar:** O usuário preenche o formulário e salva no AsyncStorage.
-3. **Ver detalhe:** Ao clicar em um OcorrenciaCard, os detalhes completos são exibidos.
-4. **Persistência:** Feche o app no Expo Go e abra novamente, os dados criados continuarão lá.
+### Ação Principal do Usuário
+Cadastrar novas ocorrências, monitorar o nível de risco (com classificações visuais na listagem e na tela de detalhes) e garantir que os dados não sejam perdidos ao fechar o aplicativo.
+
+---
+
+## 🛠️ Stack Tecnológica
+* **React Native** (com **Expo**)
+* **TypeScript**
+* **AsyncStorage** (para persistência de dados local)
+
+---
+
+## 📂 Estrutura de Pastas
+
+A organização do projeto segue uma arquitetura modular limpa:
+
+```text
+src/
+│
+├── @types/          # Definições de tipos globais (ex: Ocorrencia)
+├── components/      # Componentes reutilizáveis (botões, cards, etc.)
+├── screens/         # Telas principais do app (Lista, Cadastro, Detalhes)
+├── storage/         # Funções de persistência (AsyncStorage)
+└── utils/           # Funções utilitárias e formatadores

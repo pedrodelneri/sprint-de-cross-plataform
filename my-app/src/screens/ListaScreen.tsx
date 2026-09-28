@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Button, FlatList, StyleSheet } from 'react-native';
-import { OcorrenciaCard } from '../src/components/OcorrenciaCard';
+import { OcorrenciaCard } from '../components/OcorrenciaCard';
 import { Ocorrencia } from '../types';
 
 interface Props {
