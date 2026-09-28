@@ -41,3 +41,6 @@ src/
 ├── screens/         # Telas principais do app (Lista, Cadastro, Detalhes)
 ├── storage/         # Funções de persistência (AsyncStorage)
 └── utils/           # Funções utilitárias e formatadores
+
+
+LINK DO VIDEO DO YOUTUBE: https://youtu.be/ynd3aulTm8g
